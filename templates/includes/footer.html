@@ -1,0 +1,41 @@
+{% load static %}
+<!--====================  footer area ====================-->
+<footer>
+    <div class="footer-nav-wrapper footer-nav-wrapper--styleTwo">
+        <a href="{% url 'home' %}" class="footer-nav-single footer-nav-single--styleTwo">
+            <div class="menu-wrapper">
+                <img src="{% static 'img/icons/home.svg' %}" class="injectable" alt="">
+            </div>
+        </a>
+        <a href="cart.html" class="footer-nav-single footer-nav-single--styleTwo active">
+            <div class="menu-wrapper">
+                <img src="{% static 'img/icons/cart.svg' %}" class="injectable" alt="">
+            </div>
+        </a>
+        <a href="{% url 'store' %}" class="footer-nav-single footer-nav-single--styleTwo">
+            <div class="menu-wrapper">
+                <img src="{% static 'img/icons/profile.svg' %}" class="injectable" alt="">
+            </div>
+        </a>
+    </div>
+</footer>
+<!--====================  End of footer area  ====================-->
+<!-- JS
+    ============================================ -->
+    
+    <!-- Modernizer JS -->
+    <script src="{% static 'js/modernizr-2.8.3.min.js' %}"></script>
+    <!-- jQuery JS -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <!-- Bootstrap JS -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- SVG inject JS -->
+    <script src="{% static 'js/plugins/svg-inject.min.js' %}"></script>
+    <!-- Slick slider JS -->
+    <script src="{% static 'js/plugins/slick.min.js' %}"></script>
+    <!-- Plugins JS (Please remove the comment from below plugins.min.js for better website load performance and remove plugin js files from above) -->
+
+  <script src="{% static 'js/plugins/plugins.min.js'%}"></script>
+
+    <!-- Main JS -->
+    <script src="{% static 'js/main.js' %}"></script>
